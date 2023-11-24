@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --button-hover: #02799d;
+  --button-bg: #e1e1e6;
+  --button: #000;
+
+  font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+#app {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 82rem;
+  height: 34rem;
+}
+
+.cron-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#musicControls {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "a b"
+    "c d";
+  gap: 3.2rem;
+}
+
+#musicControls #musicButton1 {
+  grid-area: a;
+}
+#musicControls #musicButton2 {
+  grid-area: b;
+}
+#musicControls #musicButton3 {
+  grid-area: c;
+}
+#musicControls #musicButton4 {
+  grid-area: d;
+}
+
+#timer {
+  width: fit-content;
+}
+
+#timer > span {
+  font-size: 12rem;
+  font-weight: bold;
+
+  padding: 0;
+  margin: 0;
+  gap: 0;
+}
+
+#controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#controls button {
+  background-color: transparent;
+  border: 0;
+  color: var(--button);
+  cursor: pointer;
+  font-size: 6.4rem;
+}
+
+#musicControls button {
+  cursor: pointer;
+
+  background-color: var(--button-bg);
+  border: 0;
+  border-radius: 24px;
+
+  font-size: 7rem;
+
+  width: 138px;
+  height: 152px;
+}
+
+@media (max-width: 890px) {
+  body {
+    margin-top: 0;
+    padding: 0;
+  }
+  #app {
+    height: 100vh;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .cron-wrapper,
+  .music-btn-wrapper {
+    display: block;
+  }
+}

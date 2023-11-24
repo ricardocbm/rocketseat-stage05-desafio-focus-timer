@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>FocusTimer App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="cron-wrapper">
+        <section id="timer">
+          <span id="minutes">25</span>
+          <span>:</span>
+          <span id="seconds">00</span>
+        </section>
+
+        <section id="controls">
+          <button id="startButton" class="ph ph-play-circle"></button>
+          <button
+            id="stopButton"
+            style="display: none"
+            class="ph ph-stop-circle"
+          ></button>
+          <button id="resetButton" class="ph ph-clock-clockwise"></button>
+          <button id="plusButton" class="ph ph-plus-square"></button>
+          <button id="minusButton" class="ph ph-minus-square"></button>
+        </section>
+      </div>
+      <div class="music-btn-wrapper">
+        <!-- Container para os botões de música -->
+        <section id="musicControls">
+          <button id="musicButton1" class="ph ph-tree"></button>
+          <button id="musicButton2" class="ph ph-cloud-rain"></button>
+          <button id="musicButton3" class="ph ph-storefront"></button>
+          <button id="musicButton4" class="ph ph-campfire"></button>
+        </section>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
