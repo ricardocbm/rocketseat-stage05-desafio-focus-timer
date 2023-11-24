@@ -104,7 +104,9 @@ body {
     padding: 0;
   }
   #app {
-    height: 100vh;
+    height: auto;
+    width: auto;
+    margin-bottom: 3rem;
 
     flex-direction: column;
     align-items: center;
